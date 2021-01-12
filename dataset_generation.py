@@ -2,12 +2,12 @@ import os
 import h5py
 import json
 
-from .config import Config, get_args
-from .utils import delete_zero_padding
-from .node_feature import NodeFeature
-from .adj_matrix import AdjMatrix
-from .target import Target
-from .mask import Mask
+from config import Config, get_args
+from utils import delete_zero_padding
+from node_feature import NodeFeature
+from adj_matrix import AdjMatrix
+from target import Target
+from mask import Mask
 
 
 class DataSet:

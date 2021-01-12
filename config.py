@@ -5,7 +5,7 @@ import argparse
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--tiers', type=str, default='train_val_test', help='train, val, test')
-    parser.add_argument('--save_dir', type=str, default='../gcn/data', help='path to save result')
+    parser.add_argument('--save_dir', type=str, default='../gcn/gcn/data', help='path to save result')
     parser.add_argument('--data_root', type=str, default='./data', help='path where the input data saved')
     parser.add_argument('save_h5', type=bool, action='store_true', help='save the result as h5')
     return parser.parse_args()
