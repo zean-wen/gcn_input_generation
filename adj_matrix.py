@@ -56,7 +56,7 @@ class AdjMatrix:
             image_id = self.image_ix_to_id[str(image_index)]
             n_object = self.image_n_objects[image_index]
             n_ocr = self.image_n_ocr[image_index]
-            image_adj_matrix_pad = np.zeros((36+self.max_n_ocr, 300+self.max_n_ocr),
+            image_adj_matrix_pad = np.zeros((36+self.max_n_ocr, 36+self.max_n_ocr),
                                             dtype='float32')
             image_adj_matrix = np.array(self.adj_matrix[image_id])
             obj_obj_adj = image_adj_matrix[:n_object, :n_object]
