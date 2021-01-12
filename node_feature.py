@@ -4,7 +4,7 @@ import h5py
 import pickle
 import numpy as np
 
-from .utils import WordEmbedding, delete_zero_padding
+from utils import WordEmbedding, delete_zero_padding
 
 
 class NodeFeature:
