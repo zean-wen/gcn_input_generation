@@ -38,8 +38,8 @@ class Mask:
             n_object = self.image_n_objects[image_index]
             n_ocr = self.image_n_ocr[image_index]
 
-            object_index = np.array(range(n_object))
-            ocr_index = np.array(range(n_ocr)) + 36
+            object_index = np.array(range(n_object), dtype='int8')
+            ocr_index = np.array(range(n_ocr), dtype='int8') + 36
 
             image_mask[object_index] = 1
             image_mask[ocr_index] = 1
